@@ -2,6 +2,7 @@
 package com.crm.clienteservice.controller;
 
 import com.crm.clienteservice.dto.CustomerDTO;
+import com.crm.clienteservice.model.Departamento;
 import com.crm.clienteservice.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
@@ -20,4 +21,8 @@ public class Customer {
         return new ResponseEntity<>(customerService.getAll(pageable), HttpStatus.OK);
     }
     
+    @PostMapping("departamento/save")
+    public ResponseEntity<Departamento> save(@RequestBody Departamento departamento){
+        return ResponseEntity.ok(customerService.saveDepartamento(departamento));
+    }
 }

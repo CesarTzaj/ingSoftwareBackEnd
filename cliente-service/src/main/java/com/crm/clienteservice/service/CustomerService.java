@@ -7,7 +7,6 @@ import com.crm.clienteservice.foreignclients.HolaClient;
 import com.crm.clienteservice.model.Departamento;
 import com.crm.clienteservice.repository.CustomerRepository;
 import java.util.List;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
@@ -30,12 +29,14 @@ public class CustomerService {
     }
     
     public List<Departamento> getDepartamento(){
-        return restTemplate.getForObject("http://localhost:8083/departamento/all", List.class);
+        //return restTemplate.getForObject("http://localhost:8083/departamento/all", List.class);
+        return null;
     }
     
     public Departamento saveDepartamento(Departamento departamento){
-        return  restTemplate.postForObject("http://localhost:8083/departamento/save", departamento, Departamento.class);
+        //return  restTemplate.postForObject("http://localhost:8083/departamento/save", departamento, Departamento.class);
         //Otra forma de realizar esta accion con una interface 
         //return  holaClient.save(departamento);
+        return null;
     }
 }

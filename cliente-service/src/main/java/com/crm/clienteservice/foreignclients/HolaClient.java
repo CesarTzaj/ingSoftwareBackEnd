@@ -5,7 +5,7 @@ import com.crm.clienteservice.model.Departamento;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-@FeignClient(name = "hola-service", url = "http://localhost:8083/")
+@FeignClient(name = "hola-service")
 //@RequestMapping("/departamento")
 public interface HolaClient {
     

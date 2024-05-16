@@ -24,7 +24,7 @@ public class Customer {
     public ResponseEntity<Page<CustomerDTO>> getAll(Pageable pageable){
         return new ResponseEntity<>(customerService.getAll(pageable), HttpStatus.OK);
     }
-    
+    /*
     @GetMapping("departamento/all")
     public ResponseEntity<List<Departamento>> getAllDepartamento(){
         return ResponseEntity.ok(customerService.getDepartamento());
@@ -34,4 +34,5 @@ public class Customer {
     public ResponseEntity<Departamento> save(@RequestBody Departamento departamento){
         return ResponseEntity.ok(customerService.saveDepartamento(departamento));
     }
+    */
 }

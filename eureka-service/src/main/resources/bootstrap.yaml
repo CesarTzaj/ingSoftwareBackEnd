@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/ejercicio
+    username: root
+    password: 
+  cloud:
+    config:
+      enable: true
+      uri: http://localhost:8081
+
+##spring.application.name=eureka-service

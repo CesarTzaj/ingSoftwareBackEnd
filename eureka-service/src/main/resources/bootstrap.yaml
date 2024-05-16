@@ -9,5 +9,9 @@ spring:
     config:
       enable: true
       uri: http://localhost:8081
-
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 60
+  server:
+    eviction-interval-timer-in-ms: 60000
 ##spring.application.name=eureka-service

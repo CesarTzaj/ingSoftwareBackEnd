@@ -6,11 +6,11 @@ spring:
         username: root
         password: 
     cloud:
-        config:
-          enable: true
-          uri: http://localhost:8082
-server:
-    port: 8082
+      config:
+        enable: true
+        uri: http://localhost:8082
+#server:
+#    port: 8082
 #spring.application.name=hola-service
 #spring.datasource.url=jdbc:mysql://localhost:3306/ejercicio
 #spring.datasource.username=root

@@ -9,6 +9,12 @@ import java.util.Optional;
 
 public interface CustomerCrud extends JpaRepository<Customer,Integer> {
 
+    /**
+     *
+     * @param pageable
+     * @return
+     */
+    @Override
     Page<Customer> findAll(Pageable pageable);
     Optional<Customer> findByFirstName(String firstName);
 

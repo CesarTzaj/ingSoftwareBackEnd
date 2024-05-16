@@ -12,7 +12,7 @@
     <artifactId>cliente-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cliente-service</name>
-    <description>Recoleccion de datos del clientes</description>
+    <description>Registro de clientes</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2023.0.1</spring-cloud.version>
@@ -20,14 +20,12 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.mysql</groupId>
@@ -44,6 +42,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+                
         <!-- Map Struct -->
         <dependency>
             <groupId>org.mapstruct</groupId>
@@ -55,21 +54,14 @@
             <artifactId>mapstruct-processor</artifactId>
             <version>1.4.2.Final</version>
         </dependency>
-                
-        <!--Spring boot cloud-->
-        <!--
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
--->
+        
         <!--configuracion de servidor de los microservicios-->
-        <!--
+        
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        -->
+        
         <!--bootstrap-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -81,8 +73,9 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        
+
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>

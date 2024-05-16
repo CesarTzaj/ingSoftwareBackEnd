@@ -1,7 +1,5 @@
 package com.crm.clienteservice.dto;
 
-import com.crm.clienteservice.model.Departamento;
-import jakarta.persistence.Column;
 import lombok.Data;
 
 @Data
